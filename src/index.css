@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  text-decoration: none;
   background-color: black;
   color: whitesmoke;
   background-image: url(./assets/bg_dots.png);
@@ -10,11 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .header { 
@@ -28,6 +24,11 @@ code {
   height: 75px;
 }
 
+a { 
+  text-decoration:none;
+  color: white;
+}
+
 h1 { 
   font-family:'JetBrains Mono', monospace;
   font-size: 30px;
@@ -35,6 +36,8 @@ h1 {
 
 h2 {
   font-family: 'Oswald', sans-serif; 
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .game-list-container {
@@ -46,6 +49,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .game-card-image { 

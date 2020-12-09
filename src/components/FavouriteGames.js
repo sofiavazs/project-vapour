@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { GameCard } from './GameCard';
 
 export const FavouriteGames = () => {
-  const [gamesList, setGamesList] = useState([]);
+  const [favoritesList, setFavoritesList] = useState([]);
 
   useEffect(() => {
-    const GAMES_URL = 'https://express-vapour.herokuapp.com/games';
-    fetch(GAMES_URL)
+    const FAVORITES_URL = 'https://express-vapour.herokuapp.com/favorites';
+    fetch(FAVORITES_URL)
       .then((response) => response.json())
       .then((json) => {
         console.log(json)
-        setGamesList(json.results)
+        setFavoritesList(json)
       })
       .catch((error) => {
         console.error('Request failed', error)
@@ -18,11 +19,11 @@ export const FavouriteGames = () => {
 
   return (
     <>
-      <section className="game-list-container">
-        {gamesList.map((game) => (
+      <section className="favorites-container">
+        {favoritesList.map((game) => (
           <GameCard key={game.name} game={game} />
         ))}
       </section>
     </>
-  );
-};
+  )
+}
