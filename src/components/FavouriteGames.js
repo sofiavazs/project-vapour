@@ -9,8 +9,7 @@ export const FavouriteGames = () => {
     fetch(FAVORITES_URL)
       .then((response) => response.json())
       .then((json) => {
-        console.log(json)
-        setFavoritesList(json)
+        setFavoritesList(json.results)
       })
       .catch((error) => {
         console.error('Request failed', error)
@@ -19,6 +18,7 @@ export const FavouriteGames = () => {
 
   return (
     <>
+      <h1 className="favorites-header-text">Favourite Games</h1>
       <section className="favorites-container">
         {favoritesList.map((game) => (
           <GameCard key={game.name} game={game} />
