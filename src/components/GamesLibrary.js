@@ -20,7 +20,7 @@ export const GamesLibrary = () => {
 
   return (
     <>
-      <section className="game=list-container">
+      <section className="game-list-container">
         {gamesList.map((game) => (
           <GameCard key={game.name} game={game} />
         ))}

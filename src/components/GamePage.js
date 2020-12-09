@@ -21,7 +21,7 @@ export const GamePage = () => {
   return (
     <>
       <section className="game-page">
-        <div className="details=container">
+        <div className="details-container">
           <h1>{game.name}</h1>
         </div>
       </section>
