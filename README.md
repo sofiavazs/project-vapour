@@ -1,19 +1,24 @@
-# Technigo React Starter App
+# Project VAPOUR Express 👾 💨
+This project is the frontend part to display the data I've built in my first [API](https://express-vapour.herokuapp.com/) using Node.js in Express. 
+I've built the frontend as a multi-page using React and React Router
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+## Planning & What I learned 🧩
+I wanted to have the full experience of building both the backend and the frontend, so it was really fun to be able to build and visualise what I built on the backend. 
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+The home page has two main sections, which are two different components that show two different endpoints. 
+* Favorites section - shows my favourite games 
+* Library - show all my games library 
 
-## Usage
+There's also a counter in the middle that shows the total games I own and this is built on the backend. 
 
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+Once the user clicks on a game, then he's redirected to that specific game's page, which shows speficic information regarding that game, this is fetched from another endpoint built in the backend. 
 
-Alternatively, if you don't want a new git repo on your account;
+I was also to implement a loading page and a custom 404 Page Not Found page, in case the url doesn't match any of my games in the library. 
+## Tech ⚡️
+- React
+- React Router
+- React Hooks
+## View it live 🔴
+[VAPOUR](https://project-vapour.netlify.app/)
 
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+
