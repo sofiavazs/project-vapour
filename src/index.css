@@ -158,11 +158,9 @@ h2 {
 .back-link:hover { 
   color: rgb(193, 10, 89);
   -webkit-transform: scale(1.5); 
-
 }
 
 /* Not Found page */ 
-
 .not-found { 
   display: flex;
   flex-direction: column;
@@ -170,6 +168,7 @@ h2 {
   align-items: center;
   margin-top: 20%;
 }
+
 .ghosts { 
   width:800px;
 }
