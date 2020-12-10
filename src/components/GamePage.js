@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
+// eslint-disable-next-line import/named
 import { Loading } from './Loading';
 
 export const GamePage = () => {

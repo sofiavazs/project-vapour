@@ -6,6 +6,7 @@ import { GamesLibrary } from './components/GamesLibrary';
 import { Header } from './components/Header';
 import { FavouriteGames } from './components/FavouriteGames'
 import { Footer } from './components/Footer';
+// eslint-disable-next-line import/named
 import { Loading } from './components/Loading';
 
 export const App = () => {
