@@ -6,7 +6,7 @@ import { GamesLibrary } from './components/GamesLibrary';
 import { Header } from './components/Header';
 import { FavouriteGames } from './components/FavouriteGames'
 import { Footer } from './components/Footer';
-import { NotFound } from './components/NotFound'
+import { Loading } from './components/Loading';
 
 export const App = () => {
   return (
@@ -21,7 +21,7 @@ export const App = () => {
           <GamePage />
         </Route>
         <Route path="/404">
-          <NotFound />
+          <Loading />
         </Route>
         <Redirect to="/404" />
       </Switch>

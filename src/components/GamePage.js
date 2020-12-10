@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { NotFound } from './NotFound';
+
+import { Loading } from './Loading';
 
 export const GamePage = () => {
   const { slug } = useParams();
@@ -21,7 +22,7 @@ export const GamePage = () => {
 
   if (!game.slug) {
     return (
-      <NotFound />
+      <Loading />
     );
   }
 
