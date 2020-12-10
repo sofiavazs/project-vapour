@@ -162,7 +162,7 @@ h2 {
 
 /* Not Found page */ 
 
-.not-found { 
+.not-found, .loading { 
   display: flex;
   flex-direction: column;
   justify-content: center;

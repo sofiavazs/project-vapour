@@ -20,10 +20,10 @@ export const App = () => {
         <Route path="/games/:slug" exact>
           <GamePage />
         </Route>
-        <Route path="/404">
+        <Route path="/404" exact>
           <NotFound />
         </Route>
-        <Redirect to="/404" />
+        <Redirect to="/404" exact />
       </Switch>
       <Footer />
     </BrowserRouter>
