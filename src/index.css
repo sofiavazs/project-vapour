@@ -123,6 +123,10 @@ h2 {
   padding: 10px;
 }
 
+.game-card-image:hover {
+  filter: brightness(30%);
+}
+
 /* GAME PAGE */ 
 .game-page { 
   width: 100%;
