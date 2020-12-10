@@ -24,8 +24,8 @@ export const GamePage = () => {
         <div className="details-container">
           <h1>{game.name}</h1>
           <img className="game-screenshot" src={game.background_image} alt={game.name} />
-          <p className="release-date">{`Release date: ${game.released}`}</p>
-          <p className="game-rating">{`Community rating: ${game.community_rating} /10`}</p>
+          <h1>{`Release date: ${game.released}`}</h1>
+          <h2>{`Community rating: ${game.community_rating} /10`}</h2>
         </div>
       </section>
     </>
