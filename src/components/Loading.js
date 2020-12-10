@@ -2,7 +2,7 @@ import React from 'react';
 
 import Ghosts from '../assets/ghosts.gif'
 
-export const NotFound = () => {
+export const Loading = () => {
   return (
     <div className="not-found">
       <h1>Loading...</h1>
