@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import { NotFound } from './NotFound';
 
 export const GamePage = () => {
   const { slug } = useParams();
@@ -18,6 +19,12 @@ export const GamePage = () => {
       })
   }, [slug]);
 
+  if (!game.slug) {
+    return (
+      <NotFound />
+    );
+  }
+
   return (
     <>
       <section className="game-page">
@@ -27,6 +34,9 @@ export const GamePage = () => {
           <h1>{`Release date: ${game.released}`}</h1>
           <h2>{`Community rating: ${game.community_rating} /10`}</h2>
         </div>
+        <Link className="back-link" to="/">
+          <h2> BACK TO GAMES LIBRARY </h2>
+        </Link>
       </section>
     </>
   );

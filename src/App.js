@@ -1,10 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
-import { GamePage } from 'components/GamePage';
-import { GamesLibrary } from 'components/GamesLibrary';
-import { Header } from 'components/Header';
-import { FavouriteGames } from 'components/FavouriteGames'
+import { GamePage } from './components/GamePage';
+import { GamesLibrary } from './components/GamesLibrary';
+import { Header } from './components/Header';
+import { FavouriteGames } from './components/FavouriteGames'
+import { Footer } from './components/Footer';
+import { NotFound } from './components/NotFound'
 
 export const App = () => {
   return (
@@ -18,7 +20,12 @@ export const App = () => {
         <Route path="/games/:slug" exact>
           <GamePage />
         </Route>
+        <Route path="/404">
+          <NotFound />
+        </Route>
+        <Redirect to="/404" />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };
