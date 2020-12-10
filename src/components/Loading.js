@@ -4,7 +4,7 @@ import Ghosts from '../assets/ghosts.gif'
 
 export const Loading = () => {
   return (
-    <div className="not-found">
+    <div className="loading">
       <h1>Loading...</h1>
       <img className="ghosts" src={Ghosts} alt="pacman ghosts" />
     </div>

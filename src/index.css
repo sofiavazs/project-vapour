@@ -161,6 +161,7 @@ h2 {
 }
 
 /* Not Found page */ 
+
 .not-found { 
   display: flex;
   flex-direction: column;

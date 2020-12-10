@@ -6,8 +6,7 @@ import { GamesLibrary } from './components/GamesLibrary';
 import { Header } from './components/Header';
 import { FavouriteGames } from './components/FavouriteGames'
 import { Footer } from './components/Footer';
-// eslint-disable-next-line import/named
-import { Loading } from './components/Loading';
+import { NotFound } from './components/NotFound';
 
 export const App = () => {
   return (
@@ -22,7 +21,7 @@ export const App = () => {
           <GamePage />
         </Route>
         <Route path="/404">
-          <Loading />
+          <NotFound />
         </Route>
         <Redirect to="/404" />
       </Switch>
